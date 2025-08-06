@@ -1,0 +1,57 @@
+name: CustomJoinMessage
+version: 1.0
+description: Universal custom join and leave messages for Velocity/BungeeCord + Paper/Spigot/Folia
+author: CustomJoinMessage Team
+website: https://github.com/example/CustomJoinMessage
+
+main: com.example.customjoinmessage.bukkit.BukkitPluginMain
+
+# 支持的API版本
+api-version: 1.20
+
+# 平台支持声明
+folia-supported: true
+
+# 加载时机
+load: STARTUP
+
+# 软依赖（可选）
+softdepend:
+  - Vault
+  - LuckPerms
+  - EssentialsX
+
+# 权限
+permissions:
+  customjoinmessage.*:
+    description: 所有CustomJoinMessage权限
+    default: op
+    children:
+      customjoinmessage.admin: true
+      customjoinmessage.vip: true
+      customjoinmessage.reload: true
+      customjoinmessage.bypass: true
+
+  customjoinmessage.admin:
+    description: 管理员消息样式
+    default: op
+
+  customjoinmessage.vip:
+    description: VIP消息样式
+    default: false
+
+  customjoinmessage.reload:
+    description: 重新加载插件配置
+    default: op
+
+  customjoinmessage.bypass:
+    description: 绕过插件功能
+    default: false
+
+# 命令（预留）
+commands:
+  customjoinmessage:
+    description: CustomJoinMessage主命令
+    usage: /<command> [reload|status|test]
+    permission: customjoinmessage.admin
+    aliases: [cjm, joinmsg]

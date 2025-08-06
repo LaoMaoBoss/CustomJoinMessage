@@ -1,0 +1,36 @@
+# DisableJoinMessages 插件配置文件
+
+# 是否禁用默认的加入/离开消息
+# true = 禁用系统消息 (推荐，配合Velocity自定义消息使用)
+# false = 启用系统消息
+disable-messages: true
+
+# 插件信息
+plugin-info:
+  name: "DisableJoinMessages"
+  version: "1.0.0"
+  description: "配合Velocity CustomJoinMessage插件使用，禁用后端服务器的默认加入/离开消息"
+  
+# 调试设置
+debug:
+  # 是否在控制台显示详细日志
+  verbose-logging: true
+  
+  # 是否显示被拦截的消息
+  log-intercepted-messages: true
+
+# 兼容性设置
+compatibility:
+  # 是否与EssentialsX兼容模式
+  essentials-compatibility: true
+  
+  # 是否检查其他加入消息插件
+  check-other-plugins: true
+
+# 高级设置
+advanced:
+  # 事件优先级 (LOWEST, LOW, NORMAL, HIGH, HIGHEST)
+  event-priority: "HIGHEST"
+  
+  # 是否完全移除消息 (true) 还是设置为空字符串 (false)
+  complete-removal: true

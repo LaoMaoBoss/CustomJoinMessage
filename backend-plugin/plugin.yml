@@ -1,0 +1,20 @@
+name: DisableJoinMessages
+version: 1.0.0
+main: com.example.DisableJoinMessages
+api-version: 1.19
+description: Disable default join/leave messages for custom Velocity messages
+author: CustomJoinMessage
+website: https://github.com/example/customjoinmessage
+
+softdepend: [Essentials, EssentialsX]
+
+commands:
+  disablejoin:
+    description: Toggle join/leave message disable
+    usage: /disablejoin [on|off]
+    permission: disablejoin.admin
+    
+permissions:
+  disablejoin.admin:
+    description: Allow toggling join/leave messages
+    default: op

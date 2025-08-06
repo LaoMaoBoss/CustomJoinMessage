@@ -1,0 +1,6 @@
+name: CustomJoinMessage
+version: 1.0
+description: Universal custom join and leave messages for Velocity/BungeeCord + Paper/Spigot/Folia
+author: CustomJoinMessage Team
+
+main: com.example.customjoinmessage.bungee.BungeeCordPluginMain
