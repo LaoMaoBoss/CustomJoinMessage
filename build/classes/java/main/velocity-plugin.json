@@ -1,1 +1,0 @@
-{"id":"customjoinmessage","name":"CustomJoinMessage","version":"2.0.0","description":"Universal custom join and leave messages for Velocity/BungeeCord + Paper/Spigot/Folia","authors":["CustomJoinMessage Team"],"dependencies":[],"main":"com.example.customjoinmessage.velocity.VelocityPluginMain"}
